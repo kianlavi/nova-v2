@@ -2,22 +2,72 @@
 layout: default
 ---
 
+
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+    <div class="hero_home">
+        <h1 class="hero--headline">Individualize Every Sales Interaction.</h1>
+        <h3 class="hero--subheader">Sales Development and Account Executives use Nova’s account intelligence technologies to drive 4x more Sales Qualified Leads.</h3>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a href="#" class="button hero--button">Learn More</a>
+        <a href="#" class="arrow hero--arrow">
+            <img src="/img/arrow.svg">
+        </a>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <div class="wrapper">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <div class="features">
+
+            <h2 class="features--headline">Nova Feature Highlights</h2>
+
+
+
+            <div class="features--example">
+                <div class="features--text">
+                    <h2>Nova helps you personalize emails.</h2>
+                    <p>Nova helps you write 1:1, highly personal messages in 20 seconds each. Expect 4x your current rate of Qualified Leads and near 100% deliverability.</p>
+                </div>
+                <div class="features--image features--image_personalize"></div>
+            </div>
+
+            <div class="features--example">
+                <div class="features--text">
+                    <h2>Nova lives in the Inbox and the CRM.</h2>
+                    <p>Nova lives where you spend your day, making it easy to integrate Nova into your workflow.</p>
+                </div>
+                <div class="features--image features--image_crm"></div>
+            </div>
+
+            <div class="features--example">
+                <div class="features--text">
+                    <h2>Nova helps you manage your time.</h2>
+                    <p>Nova understands what drives your success. Nova tells you exactly whom to email and when.</p>
+                </div>
+                <div class="features--image features--image_personalize"></div>
+            </div>
+
+        </div>
+
+
+
+        <h1 class="page-heading">Posts</h1>
+
+        <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+        </ul>
+    </div>
 
 </div>
+
+<script>
+	var nav = responsiveNav(".nav-collapse");
+</script>
