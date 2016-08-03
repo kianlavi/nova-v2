@@ -1,6 +1,6 @@
 .hero_home {
     background: #fff;
-    background-image: url('{{site.baseurl}}/img/bg-clouds.png');
+    background-image: url('../img/bg-clouds.png');
     background-size: cover;
     border-bottom: $base-font-size * 2.5 solid $brand-color;
     padding: $base-font-size * 8 0 $base-font-size * 4;
@@ -63,15 +63,15 @@
         }
 
         .features--image_personalize {
-            background-image: url('{{site.baseurl}}/img/eg-1.png');
+            background-image: url('../img/eg-1.png');
         }
 
         .features--image_crm {
-            background-image: url('{{site.baseurl}}/img/eg-2.png');
+            background-image: url('../img/eg-2.png');
         }
 
         .features--image_manage {
-            background-image: url('{{site.baseurl}}/img/eg-3.png');
+            background-image: url('../img/eg-3.png');
         }
     }
 
