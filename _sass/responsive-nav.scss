@@ -62,7 +62,7 @@
   float: right;
   content: ' ';
   color: white;
-  background-image: url('/img/hamburger.svg');
+  background-image: url('{{site.baseurl}}/img/hamburger.svg');
   background-repeat: no-repeat;
   font-size: 0;
   width: 24px;
