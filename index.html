@@ -46,21 +46,99 @@ layout: default
 
         </div>
 
+        <div class="case-studies wrapper--padding">
+            <h2 class="headline case-studies--headline">Customer Case Studies</h2>
 
+            <div class="case-studies--testimonial flex--row">
 
-        <h1 class="page-heading">Posts</h1>
+                <div class="case-studies--client flex_1">
+                    <img src="{{site.baseurl}}/img/testimonial-1.png" alt="">
+                    <div class="case-studies--quote">
+                        <p class="case-studies--quote_text">
+                            “We are seeing nearly three times the conversion on our outreach since adopting Nova.”
+                        </p>
+                        <p class="case-studies--quote_name">
+                            - FIRST LAST
+                        </p>
+                        <p class="case-studies--quote_company">
+                            Title @ Company
+                        </p>
+                        <a href="#" class="button case-studies--cta">See Stats</a>
+                    </div>
+                </div>
 
-        <ul class="post-list">
-        {% for post in site.posts %}
-          <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <div class="case-studies--client flex_1">
+                    <img src="{{site.baseurl}}/img/testimonial-2.png" alt="">
+                    <div class="case-studies--quote">
+                        <p class="case-studies--quote_text">
+                            “We are seeing nearly three times the conversion on our outreach since adopting Nova.”
+                        </p>
+                        <p class="case-studies--quote_name">
+                            - FIRST LAST
+                        </p>
+                        <p class="case-studies--quote_company">
+                            Title @ Company
+                        </p>
+                        <a href="#" class="button case-studies--cta">See Stats</a>
+                    </div>
+                </div>
 
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-            </h2>
-          </li>
-        {% endfor %}
-        </ul>
+                <div class="case-studies--client flex_1">
+                    <img src="{{site.baseurl}}/img/testimonial-3.png" alt="">
+                    <div class="case-studies--quote">
+                        <p class="case-studies--quote_text">
+                            “We are seeing nearly three times the conversion on our outreach since adopting Nova.”
+                        </p>
+                        <p class="case-studies--quote_name">
+                            - FIRST LAST
+                        </p>
+                        <p class="case-studies--quote_company">
+                            Title @ Company
+                        </p>
+                        <a href="#" class="button case-studies--cta">See Stats</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="case-studies--quote case-studies--quote_big">
+                <p class="case-studies--quote_text case-studies--quote_big-text">
+                    “Nova has dramatically improved our rep performance and helped drive a major improvement in our revenue pipeline. We are seeing nearly three times the conversion on our outreach since adopting Nova.”
+                </p>
+
+                <hr>
+
+                <div class="case-studies--stats-wrapper flex--row">
+
+                    <div class="case-studies--stats flex_1">
+                        <span class="case-studies--stats_number">XXX</span>
+                        <span class="case-studies--stats_text">SQL’S PER REP PER WEEK</span>
+                    </div>
+
+                    <div class="case-studies--stats flex_1">
+                        <span class="case-studies--stats_number">XX%</span>
+                        <span class="case-studies--stats_text">OPEN RATE</span>
+                    </div>
+
+                    <div class="case-studies--stats flex_1">
+                        <span class="case-studies--stats_number">XX%</span>
+                        <span class="case-studies--stats_text">CONTACTS TO MEETING</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero_cta">
+        <h2 class="hero--title">Ready to get started with Nova?</h2>
+
+        <a href="" class="button hero--button_white">Start Free Trial</a>
+        <a href="" class="button hero--button_blue">Watch a Demo</a>
+
+        <p class="hero--aside">Outlook coming soon; <a href="#">Sign up</a> for updates!</p>
+
     </div>
 
 </div>
