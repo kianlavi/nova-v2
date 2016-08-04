@@ -1,38 +1,54 @@
 <footer class="site-footer">
 
-  <div class="wrapper">
+<div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+<div class="footer-col-wrapper">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title | escape }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
+    <div class="footer-col footer-col-sm">
+      <a class="site-title" href="{{ site.baseurl }}/"></a>
     </div>
 
+  <div class="footer-col footer-col-sm">
+    <p class="footer-heading">Product</p>
+    <ul class="footer-list">
+        <li>Features</li>
+        <li>How It Works</li>
+        <li>API Docs</li>
+        <li>Integrations</li>
+        <li>Pricing</li>
+    </ul>
   </div>
+
+  <div class="footer-col footer-col-sm">
+    <p class="footer-heading">Company</p>
+    <ul class="footer-list">
+        <li>About Us</li>
+        <li>Blog</li>
+        <li>Privacy Policy</li>
+        <li>Terms</li>
+    </ul>
+  </div>
+
+  <div class="footer-col footer-col-sm">
+    <p class="footer-heading">Help</p>
+    <ul class="footer-list">
+        <li>FAQ</li>
+        <li>Contact Sales</li>
+        <li>Request Demo</li>
+    </ul>
+  </div>
+
+  <div class="footer-col footer-col-lg">
+    <p class="footer-heading">From the Blog</p>
+    <ul class="footer-list">
+        <li>Sonar has Integrated with Facebook’s New Messenger Platform</li>
+        <li>Why Twillio Is Better With Sonar</li>
+        <li>4 Ways to Build a World-Class Customer Experience Through Mobile Messaging</li>
+    </ul>
+  </div>
+
+</div>
+
+</div>
 
 </footer>
