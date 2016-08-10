@@ -1,0 +1,100 @@
+.pricing {
+    h2 {
+        letter-spacing: 2.5px;
+    }
+
+    p {
+        font-size: $base-font-size * 1.3;
+        letter-spacing: 0.75px;
+    }
+
+    .hero_pricing {
+        padding-bottom: 112px;
+    }
+
+    .plan--container {
+        padding-top: $base-font-size * 3;
+    }
+
+    .plan {
+        background-color: #fff;
+        padding: $base-font-size*2 $base-font-size*2.5;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            transform: scale(1.07);
+        }
+
+        &:first-child {
+            margin-right: $base-font-size;
+        }
+
+        h3 {
+            padding-bottom: $base-font-size/2;
+        }
+
+        .plan--price {
+            font-size: $base-font-size;
+            line-height: $base-font-size*2;
+            opacity: 0.5;
+            padding-bottom: $base-font-size;
+        }
+
+        .plan--description {
+            justify-content: space-between;
+
+            p {
+                font-size: $base-font-size;
+            }
+
+            .button {
+                display: inline-block;
+                height: 24px;
+            }
+        }
+    }
+
+    .plan_professional {
+        border: 1px solid $brand-color;
+        border-bottom-width: $base-font-size/2;
+
+        &:hover {
+            box-shadow: 0px 3px 20px $brand-color;
+        }
+
+        h3 {
+            color: $brand-color;
+        }
+    }
+
+    .plan_enterprise {
+        border: 1px solid $accent-color;
+        border-bottom-width: $base-font-size/2;
+
+        &:hover {
+            box-shadow: 0px 3px 20px $accent-color;
+        }
+
+        h3 {
+            color: $accent-color;
+        }
+    }
+}
+
+@media screen and (min-width: 40em) {
+    .plan--description {
+        .button {
+            float: right;
+        }
+    }
+}
+
+@media screen and (max-width: 39em) {
+    .flex--row {
+        flex-direction: column;
+    }
+
+    .plan--container {
+        text-align: center;
+    }
+}

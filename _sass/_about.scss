@@ -1,0 +1,135 @@
+.about {
+    h2 {
+        letter-spacing: 2.5px;
+    }
+    
+    p {
+        font-size: $base-font-size * 1.3;
+        letter-spacing: 1.12px;
+    }
+
+    .hero_about {
+        padding-bottom: 112px;
+    }
+
+    .mission {
+        text-align: center;
+    }
+
+    .founders {
+
+        .founders--person {
+            padding-bottom: $base-font-size * 6;
+        }
+
+        .founders--bio {
+            p {
+                padding-bottom: $base-font-size;
+            }
+        }
+
+        .founders--photo {
+            div {
+                background-position: center;
+                background-size: cover;
+                border: 3px solid $brand-color;
+                border-radius: 250px;
+                height: 250px;
+                width: 250px;
+            }
+        }
+
+        .founders_will {
+            background-image: url('../img/founders-will.png');
+        }
+
+        .founders_bryan {
+            background-image: url('../img/founders-bryan.png');
+        }
+
+        .advisors_kendall {
+            background-image: url('../img/advisors-kendall.png');
+        }
+
+        .advisors_dan {
+            background-image: url('../img/advisors-dan.png');
+        }
+
+        .founders--social {
+            justify-content: space-between;
+
+            .social {
+                margin: 0 $base-font-size/2;
+            }
+        }
+    }
+
+    .location {
+        padding-bottom: 0;
+        text-align: center;
+
+        .headline {
+            padding-bottom: $base-font-size * 3;
+        }
+    }
+
+    .hero_map {
+        background-image: url('../img/location.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: $base-font-size * 10;
+        padding: 180px;
+    }
+
+    .hero_cta-about {
+        background-color: $brand-color;
+    }
+
+
+}
+
+@media screen and (min-width: 40em) {
+    .founders {
+        text-align: left;
+
+        .headline {
+            padding-bottom: $base-font-size * 4;
+        }
+    }
+
+    .founders--photo {
+        margin-right: $base-font-size * 3;
+        // padding-bottom: $base-font-size * 4;
+    }
+}
+
+@media screen and (max-width: 39em) {
+    .flex--row {
+        flex-direction: column;
+    }
+
+    .founders {
+        text-align: center;
+    }
+
+    .advisors--bio {
+        p {
+            padding-bottom: 0;
+        }
+    }
+
+    .founders--social {
+        div {
+            padding-bottom: $base-font-size * 1.5;
+        }
+    }
+
+    .founders--photo {
+        margin: 0 auto;
+        padding-bottom: $base-font-size * 2;
+    }
+
+    .hero_map {
+        background-position: 75%;
+    }
+}

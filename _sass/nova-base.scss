@@ -9,7 +9,7 @@ h2 {
 }
 
 h3 {
-    font-size: $base-font-size * 1.7;
+    font-size: $base-font-size * 2;
 }
 
 .flex--row {
@@ -60,10 +60,128 @@ h3 {
     }
 }
 
+.button_white {
+    background-color: transparent;
+    border: 3px solid #fff;
+}
+
+.button_blue {
+    background: $brand-color;
+    border: 3px solid $brand-color;
+}
+
+.button_green {
+    background: #fff;
+    border: 3px solid $accent-color;
+    color: $accent-color;
+
+    &:visited {
+        color: $accent-color;
+    }
+}
+
 .headline {
     text-align: center;
 }
 
+.hero {
+    border-bottom: $base-font-size * 2.5 solid $brand-color;
+    padding: $base-font-size * 8 0 $base-font-size * 4;
+    text-align: center;
+
+    .hero--button {
+        display: inline-block;
+        margin-top: $base-font-size * 2;
+    }
+
+    .hero--arrow {
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        margin-top: $base-font-size * 3;
+        transition: $transition-time;
+        width: 50px;
+
+        &:hover {
+            transform: translateY(4px);
+        }
+    }
+}
+
+.hero_cta {
+    background: $accent-color;
+    padding: $base-font-size * 4 0 $base-font-size * 4;
+    text-align: center;
+
+    .hero--title {
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 2.19px;
+        margin-bottom: $base-font-size * 3;
+    }
+
+    .hero--button {
+        border: 3px solid $accent-color;
+    }
+
+    .hero--button_white {
+        background-color: transparent;
+        border: 3px solid #fff;
+        margin-right: $base-font-size * 2;
+    }
+
+    .hero--button_blue {
+        background: $brand-color;
+        border: 3px solid $brand-color;
+    }
+
+    .hero--aside {
+        color: #fff;
+        font-weight: 100;
+        letter-spacing: 0.88px;
+        margin-top: $base-font-size * 2.5;
+
+        a {
+            color: #fff;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+
+.hero_cta-blue {
+    background-color: $brand-color;
+}
+
+.social {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    color: transparent;
+    padding: 7px 17px;
+}
+
+.social_twitter {
+    background-color: #24A9E6;
+    background-image: url('../img/social-twitter.png');
+}
+
+.social_facebook {
+    background-color: #43619C;
+    background-image: url('../img/social-facebook.png');
+}
+
+.social_linkedin {
+    background-color: #187FB8;
+    background-image: url('../img/social-linkedin.png');
+}
+
 .wrapper--padding {
-    padding: $base-font-size * 5.5 0;
+    padding: $base-font-size*5.5 0;
+}
+
+@media screen and (min-width: 40em) {
+    .wrapper--extra-padding {
+        padding: $base-font-size*5.5 $base-font-size*8;
+    }
 }

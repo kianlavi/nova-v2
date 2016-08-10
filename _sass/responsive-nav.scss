@@ -36,6 +36,13 @@
           text-decoration: none;
       }
   }
+
+  .active {
+      border-bottom: 3px solid $brand-color;
+      color: $brand-color;
+      padding-bottom: $base-font-size / 2;
+
+  }
 }
 
 .js .nav-collapse {

@@ -119,6 +119,10 @@
     line-height: $base-font-size * 2.5;
     list-style: none;
     margin-left: 0;
+
+    a {
+        color: #666;
+    }
 }
 
 .footer-col-wrapper {
