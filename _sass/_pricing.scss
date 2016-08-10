@@ -25,10 +25,6 @@
             transform: scale(1.07);
         }
 
-        &:first-child {
-            margin-right: $base-font-size;
-        }
-
         h3 {
             padding-bottom: $base-font-size/2;
         }
@@ -57,6 +53,7 @@
     .plan_professional {
         border: 1px solid $brand-color;
         border-bottom-width: $base-font-size/2;
+        letter-spacing: 1.75px;
 
         &:hover {
             box-shadow: 0px 3px 20px $brand-color;
@@ -70,6 +67,7 @@
     .plan_enterprise {
         border: 1px solid $accent-color;
         border-bottom-width: $base-font-size/2;
+        letter-spacing: 1.75px;
 
         &:hover {
             box-shadow: 0px 3px 20px $accent-color;
@@ -79,19 +77,144 @@
             color: $accent-color;
         }
     }
+
+    .features--table {
+        border: 1px solid $brand-color;
+        padding: $base-font-size*5 $base-font-size*3 $base-font-size*4;
+
+        h3 {
+            font-size: $base-font-size*1.6;
+            letter-spacing: 1.38px;
+            margin-bottom: 0;
+            padding: $base-font-size $base-font-size*3;
+        }
+
+        .features--row:last-child .features--name {
+            border: none;
+        }
+
+        .features--title {
+            color: darken($grey-color-light, 10%);
+        }
+
+        .plan--name {
+            text-align: center;
+        }
+
+        .plan--name_professional {
+            border: 1px solid $brand-color;
+            color: $brand-color;
+        }
+
+        .plan--name_enterprise {
+            border: 1px solid $accent-color;
+            color: $accent-color;
+        }
+
+        .features--name {
+            border: 1px solid $grey-color-light;
+            border-bottom-color: $grey-color-light;
+            font-size: 16px;
+            margin-bottom: -1px;
+            padding: $base-font-size/2 $base-font-size $base-font-size/2 $base-font-size;
+        }
+
+        .features--check {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: $base-font-size * 1.5;
+            border: 1px solid $grey-color-light;
+            color: transparent;
+            margin-bottom: -1px;
+            padding: 0 $base-font-size*3;
+        }
+
+        .features--check_professional {
+            background-image: url('../img/check-blue.png');
+            border-left-color: $brand-color;
+            border-right-color: $brand-color;
+        }
+
+        .features--check_enterprise {
+            background-image: url('../img/check-green.png');
+            border-left-color: $accent-color;
+            border-right-color: $accent-color;
+        }
+
+        .features--check_none {
+            background-image: none;
+        }
+
+        .features--cta.button_blue {
+            border-color: $brand-color;
+            color: #fff;
+            font-size: 16px;
+            padding: 7px 31.5px;
+            text-align: center;
+        }
+
+        .features--cta_green {
+            border-color: $accent-color;
+            color: #fff;
+            font-size: 16px;
+            padding: 7px 29px;
+            text-align: center;
+        }
+    }
 }
 
 @media screen and (min-width: 40em) {
+    .pricing {
+        .plan:first-child {
+            margin-right: $base-font-size;
+        }
+
+        .features--table {
+            margin-top: -$base-font-size;
+            
+            .features--title {
+                padding-left: $base-font-size;
+            }
+
+            .plan--name_professional,
+            .plan--name_enterprise {
+                border-bottom: none;
+            }
+
+            .features--name {
+                border-right-width: 0;
+            }
+        }
+    }
+
     .plan--description {
         .button {
             float: right;
         }
+    }
+
+    .plan--name_enterprise {
+        margin-left: 4px;
     }
 }
 
 @media screen and (max-width: 39em) {
     .flex--row {
         flex-direction: column;
+    }
+
+    .pricing {
+        .plan {
+            margin-bottom: $base-font-size * 2;
+        }
+    }
+
+    .features--title {
+        text-align: center;
+    }
+
+    .features--row {
+        margin-bottom: $base-font-size * 2;
     }
 
     .plan--container {
