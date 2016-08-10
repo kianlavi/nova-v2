@@ -62,6 +62,7 @@
 
             &:hover {
                 opacity: 1;
+                transform: scale(1.07);
 
                 .case-studies--cta {
                     background: $accent-color;
