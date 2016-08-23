@@ -145,20 +145,18 @@
             background-image: none;
         }
 
-        .features--cta.button_blue {
-            border-color: $brand-color;
+        .button {
             color: #fff;
-            font-size: 16px;
-            padding: 7px 31.5px;
-            text-align: center;
         }
 
-        .features--cta_green {
-            border-color: $accent-color;
-            color: #fff;
-            font-size: 16px;
-            padding: 7px 29px;
-            text-align: center;
+        .plan--cta_professional {
+            background: $brand-color;
+            line-height: 24px;
+        }
+
+        .plan--cta_enterprise {
+            background: $accent-color;
+            line-height: 24px;
         }
     }
 }
